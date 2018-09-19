@@ -1,0 +1,11 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <label> input</label><br>
+      <input class="form-control" [(ngModel)]="input" />
+      <button (click)="onAddInput(input)" >add input</button>
+      <p *ngFor="let input of inputs" [ngStyle]="{backgroundColor: color}"> {{ input }} </p>
+    </div>
+  </div>
+</div>
+ 
