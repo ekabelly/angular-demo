@@ -3,11 +3,10 @@
         <div class="col-md-12">
             <app-header></app-header>
         </div>
-        <div class="col-md-6">
-            <app-shopping-list></app-shopping-list>
-        </div>
-        <div class="col-md-6">
-            <app-recipes></app-recipes>
+        <div class="col-md-12">
+                <router-outlet></router-outlet>
+            <!-- <app-shopping-list *ngIf="route === 'shopping-list'"></app-shopping-list>
+            <app-recipes *ngIf="route === 'recipes'"></app-recipes> -->
         </div>
     </div>
 </div>

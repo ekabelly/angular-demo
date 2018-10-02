@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo-app';
+  route:string = 'recipes';
+
+  Route(route:string){
+    this.route = route;
+  }
 }
